@@ -14,7 +14,7 @@ class Geolocation(object):
             self.init_app(self.app)
                 
     def init_app(self, app):
-        app.config.setdefault('GEOLOCATION_PROVIDERS', ('FreeGeoIP', 'HostIP''IPInfoDB', 'HostIP'))
+        app.config.setdefault('GEOLOCATION_PROVIDERS', (provider.FreeGeoIP, provider.HostIP, provider.IPInfoDB, provider.HostIP))
         
     def locate(self, ip):
         providers = self.app.config['GEOLOCATION_PROVIDERS']
