@@ -13,7 +13,7 @@ class Geolocation(object):
         if app is not None:
             self.init_app(self.app)
                 
-    def init_app(self.app):
+    def init_app(self, app):
         app.config.setdefault('GEOLOCATION_PROVIDERS', ('FreeGeoIP', 'HostIP''IPInfoDB', 'HostIP'))
         
     def locate(self, ip):
