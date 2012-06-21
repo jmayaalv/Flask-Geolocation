@@ -6,20 +6,16 @@ This is the description for that library
 """
 from setuptools import setup
 
-
 setup(
-    name='Flask-SQLite3',
+    name='Flask-Geolocation',
     version='1.0',
-    url='http://example.com/flask-sqlite3/',
+    url='https://github.com/jmayaalv/flask-geolocation',
     license='BSD',
-    author='Your Name',
-    author_email='your-email@example.com',
-    description='Very short description',
+    author='Juan E. Maya',
+    author_email='jmayaalv@gmail.com',
+    description='Flask IP Geolocation',
     long_description=__doc__,
-    py_modules=['flask_sqlite3'],
-    # if you would be using a package instead use packages instead
-    # of py_modules:
-    # packages=['flask_sqlite3'],
+    py_modules=['flask_geolocation'],
     zip_safe=False,
     include_package_data=True,
     platforms='any',
