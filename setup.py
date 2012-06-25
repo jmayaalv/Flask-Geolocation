@@ -4,7 +4,7 @@ Flask-Geolocation
 
 This is the description for that library
 """
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(
     name='Flask-Geolocation',
@@ -15,8 +15,8 @@ setup(
     author_email='jmayaalv@gmail.com',
     description='Flask IP Geolocation',
     long_description=__doc__,
-    py_modules=['flask_geolocation'],
     zip_safe=False,
+    packages=find_packages(),
     include_package_data=True,
     platforms='any',
     install_requires=[
